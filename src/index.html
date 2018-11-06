@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rocco | Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navigation container">
+            <ul class="navigation__list">
+                <div>
+                    <a href="index.html">
+                        <img src="img/logotipo-rocco.svg" alt="index.html" class="navigation__logo">
+                    </a>
+                </div>
+                <li class="navigation__item">
+                    <a href="#slider" class="navigation__link page-scroll active">
+                        home <img src="img/indicador-menu.svg" alt="indicator" class="navigation__link-indicator">
+                    </a>
+                </li>
+                <li class="navigation__item">
+                    <a href="nosotros.html" class="navigation__link">
+                        nosotros <img src="img/indicador-menu.svg" alt="indicator" class="navigation__link-indicator">
+                    </a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link submenu-hover">
+                        servicios <img src="img/indicador-menu.svg" alt="indicator" class="navigation__link-indicator">
+                    </a>
+                    <div class="submenu">
+                        <ul class="submenu__list">
+                            <li class="submenu__item"><a href="servicios-diseno.html" class="submenu__link">Diseño</a></li>
+                            <li class="submenu__item"><a href="#" class="submenu__link">Remodelación</a></li>
+                            <li class="submenu__item"><a href="#" class="submenu__link">Construcción</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link submenu-hover">
+                        proyectos <img src="img/indicador-menu.svg" alt="indicator" class="navigation__link-indicator">
+                    </a>
+                    <div class="submenu">
+                        <ul class="submenu__list">
+                            <li class="submenu__item"><a href="restaurantes-cafeterias.html" class="submenu__link">Restaurantes / Cafeterías</a></li>
+                            <li class="submenu__item"><a href="locales-comerciales.html" class="submenu__link">Locales Comerciales</a></li>
+                            <li class="submenu__item"><a href="belleza-spa.html" class="submenu__link">Belleza y Spa's</a></li>
+                            <li class="submenu__item"><a href="espacios-infantiles.html" class="submenu__link">Espacios Infantiles</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navigation__item">
+                    <a href="contacto.html" class="navigation__link page-scroll">
+                        contacto <img src="img/indicador-menu.svg" alt="indicator" class="navigation__link-indicator">
+                    </a>
+                </li>
+
+                <div class="navigation__phone-num">
+                    <p>(55) 7824 0118 <span>CDMX</span></p>
+                    <p>(81) 2230 5130 <span>MTY</span></p>
+                    <p>contacto<span>@rocco.mx</span></p>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+<div class="nav-mobile onlyMobile">
+
+    <input type="checkbox" class="nav-mobile__checkbox" id="navi-toggle">
+
+    <label for="navi-toggle" class="nav-mobile__button">
+        <span class="nav-mobile__icon">&nbsp;</span>
+    </label>
+
+    <div class="nav-mobile__background">
+        <nav class="nav-mobile__nav">
+            <ul class="nav-mobile__list">
+                <li class="nav-mobile__item"><a href="index.html" class="nav-mobile__link"><span>&mdash;</span> home</a></li>
+                <li class="nav-mobile__item"><a href="nosotros.html" class="nav-mobile__link"><span>&mdash;</span> nosotros</a></li>
+                <li class="nav-mobile__item"><a href="#" class="nav-mobile__link"><span>&mdash;</span> servicios</a></li>
+                    <ul class="nav-mobile__sublist">
+                        <li><a href="servicios-diseno.html">Diseño</a></li>
+                        <li><a href="#">Remodelación</a></li>
+                        <li><a href="#">Construcción</a></li>
+                    </ul>
+                <li class="nav-mobile__item"><a href="#" class="nav-mobile__link"><span>&mdash;</span> proyectos</a></li>
+                    <ul class="nav-mobile__sublist">
+                        <li><a href="restaurantes-cafeterias.html">Restaurantes</a></li>
+                        <li><a href="locales-comerciales.html">Locales Comerciales</a></li>
+                        <li><a href="belleza-spa.html">Belleza y Spa's</a></li>
+                        <li><a href="espacios-infantiles.html">Espacios Infantiles</a></li>
+                    </ul>
+                <li class="nav-mobile__item"><a href="contacto.html" class="nav-mobile__link"><span>&mdash;</span> contacto</a></li>
+            </ul>
+    
+            <div class="nav-mobile__contact">
+                <p>(55) 7824 0116 <span>CDMX</span></p>
+                <p>(81) 2230 5130 <span>MTY</span></p>
+                <p>contacto<span>@rocco.mx</span></p>
+                <div class="nav-mobile__social">
+                    <a href="#"><img src="img/facebook.svg" alt="facebook"></a>
+                    <a href="#"><img src="img/instagram.svg" alt="instagram"></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+</div>
+
+<section class="section-slider" id="slider">
+
+    <div id="main-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#main-carousel" data-slide-to="0" class="active">01.</li>
+            <li data-target="#main-carousel" data-slide-to="1">02.</li>
+            <li data-target="#main-carousel" data-slide-to="2">03.</li>
+            <li data-target="#main-carousel" data-slide-to="3">04.</li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item carousel-item--1 active">
+                <div class="carousel__content">
+                    <h1 class="carousel__heading">
+                        Construimos experiencias <span>únicas</span>
+                    </h1>
+                </div>
+            </div>
+            <div class="carousel-item carousel-item--2">
+                <div class="carousel__content">
+                    <h1 class="carousel__heading">
+                        Construimos experiencias <span>únicas</span>
+                    </h1>
+                </div>
+            </div>
+            <div class="carousel-item carousel-item--3">
+                <div class="carousel__content">
+                    <h1 class="carousel__heading">
+                        Construimos experiencias <span>únicas</span>
+                    </h1>
+                </div>
+            </div>
+            <div class="carousel-item carousel-item--4">
+                <div class="carousel__content">
+                    <h1 class="carousel__heading">
+                        Construimos experiencias <span>únicas</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="carousel__pleca">
+        </div>
+        <a href="#main-carousel" data-slide="prev" class="carousel__prev onlyDesktop">
+            <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+        </a>
+        <a href="#main-carousel" data-slide="next" class="carousel__next onlyDesktop">
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+        </a>
+    </div>
+
+</section>
+
+<section class="home">
+
+    <div class="social social--1">
+        <a href="#"><img src="img/facebook.svg" alt="facebook" class="social__img"></a>
+        <a href="#"><img src="img/instagram.svg" alt="instagram" class="social__img"></a>
+    </div>
+
+    <div class="container">
+
+        <div class="home__div1">
+            <span class="span-1">Roccó</span> es un despacho de arquitectura y diseño especializado en la remodelación de interiores, dedicado
+            a crear espacios funcionales desarrollados con base en las necesidades de nuestros clientes, buscando
+            explotar el potencial estético y artístico de cada proyecto.
+        </div>
+
+        <div class="home__scroll-box">
+            <a href="#"><img src="img/scroll-down.svg" alt="scroll-down" class="home__scroll"></a>
+        </div>
+
+        <div class="row home__row">
+            <div class="col-12 col-lg-6">
+                <div class="home__img-box">
+                    <img src="img/home-02.jpg" alt="home02" class="home__img1">
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="home__div2">
+                    <h2 class="arrow-heading arrow-heading--pink">equipo</h2>
+                    <p class="home__paragraph">
+                        Nuestro equipo esta conformado por expertos en las diversas
+                        áreas del diseño y la construcción. Para cada proyecto
+                        asignamos a un diseñador de interiores y a un arquitecto que
+                        trabajan en conjunto con ingenieros, artistas gráficos y
+                        mercadólogos para hacer de tu local comercial un negocio
+                        exitoso y eficaz.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <div class="home__div2">
+                    <h2 class="arrow-heading arrow-heading--pink">metodología</h2>
+                    <p class="home__paragraph">
+                        La metodología que utilizamos para planear y ejecutar los
+                        conceptos de diseño es lo que nos hace únicos. En <span class="span-1">Roccó</span>
+                        desarrollamos planes acorde a las necesidades comerciales del
+                        espacio, enfocándonos en la funcionalidad, manteniendo una
+                        comunicación constante con el cliente, efectuando visitas de
+                        campo y sometiendo las propuestas a retroalimentación, con el
+                        objetivo de que tus ideas se materialicen tal cual las visualizas en
+                        tu cabeza.
+                    </p>
+                    <p class="home__paragraph">
+                        De todos los despachos de arquitectura en CDMX <span class="span-1">Roccó</span> es tu
+                        mejor opción.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="home__img-box">
+                    <img src="img/medotologia-home.svg" alt="meto" class="home__img2">
+                </div>
+            </div>
+        </div>
+
+        <div class="pleca pleca--home">
+        </div>
+    </div>
+
+</section>
+
+<section class="contact" id="contact">
+    <div class="contact__box">
+        <h2 class="contact__heading">
+            Cualquier idea es 
+            <span>posible</span>
+        </h2>
+        <div class="contact__form-box">
+            <form action="#" class="form">
+                <div class="form__group">
+                    <label for="name" class="form__label">nombre</label>
+                    <input type="text" class="form__input" id="name">
+                </div>
+                <div class="form__group">
+                    <label for="phone" class="form__label">teléfono</label>
+                    <input type="text" class="form__input" id="phone">
+                </div>
+                <div class="form__group">
+                    <label for="email" class="form__label">e-mail</label>
+                    <input type="email" class="form__input" id="email">
+                </div>
+                <div class="form__group">
+                    <label for="message" class="form__label">mensaje</label>
+                    <textarea class="form__input form__textarea" id="message"></textarea>
+                </div>
+                <div class="form__group">
+                    <input type="submit" class="form__submit" value="Enviar ->">
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__box">
+
+            <div class="footer__content">
+                <div class="footer__sucursal">
+                    wtc méxico<br>montecito 38
+                </div>
+                <img src="img/indicador-menu.svg" alt="separator" class="footer__separator">
+                <div class="footer__direccion footer__direccion--2">
+                    Piso 29, Oficina 34<br>
+                    Nápoles, Benito Juárez<br>
+                    CDMX, México, CP 03810
+                </div>
+            </div>
+            
+            <div class="footer__content footer__content--1">
+                <div class="footer__sucursal footer__sucursal--2">
+                    moll<br>del valle
+                </div>
+                <img src="img/indicador-menu.svg" alt="separator" class="footer__separator">
+                <div class="footer__direccion">
+                    Calz. Del Valle 400, Int. N6 08A<br>
+                    Del Valle, SN. Pedro Garza G.<br>
+                    NL, México, CP 66220
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="footer__pleca-box">
+        <img src="img/pleca-contacto-01.svg" alt="pleca" class="footer__pleca">
+    </div>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="slick/slick.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

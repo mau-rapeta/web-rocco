@@ -1,0 +1,200 @@
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color .5s;
+
+    &.white-bckgrnd{
+        background-color: rgba($color-white, 0.8);
+    }
+
+    &.trans-bckgrnd {
+        background-color: transparent !important;
+    }
+}
+
+.navigation {
+    padding: 2rem 0;
+
+    &__list {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            display: block;
+            color: $color-black;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-weight: 400;
+            transition: color .2s;
+            margin-top: 1rem;
+        }
+        
+        &:hover,
+        &.active {
+            color: $color-primary;
+        }
+
+        &:hover > &-indicator,
+        &.active > &-indicator {
+            opacity: 1;
+        }
+
+        &.submenu-hover:hover + .submenu {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &__link-indicator {
+        width: 1rem;
+        display: block;
+        margin: 0 auto;
+        margin-top: 3px;
+        opacity: 0;
+        transition: opacity .2s;
+    }
+
+    &__logo {
+        width: 25rem;
+    }
+
+    &__phone-num {
+        font-size: 1.2rem;
+        padding-left: 1.5rem;
+        border-left: 1px solid $color-black;
+        p {
+            line-height: .8;
+            font-weight: 400;
+            color: $color-primary;
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+
+        span {
+            font-weight: 200;
+        }
+    }
+
+    &__button-box {
+        display: none;   
+    }
+
+    &__button {
+        &:link,
+        &:visited {
+            font-size: 3rem;
+            color: black;
+        }
+    }
+}
+
+.submenu {
+    position: absolute;
+    top: 7rem;
+    left: -5rem;
+    background-color: #e6e6e6;
+    padding: .5rem 0;
+    border-top: 1px solid $color-black;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity .3s, visibility .2s .3s;
+    transition: opacity .3s, visibility .2s .3s;
+
+    &__list {
+        list-style: none;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            color: $color-secondary;
+            font-size: 1.2rem;
+            padding: 1rem 0;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            width: 18rem;
+        }
+
+        &:hover {
+            color: $color-primary;
+
+            
+        }
+
+        &::before {
+            content: "";
+            background-color: $color-primary;
+            width: 1rem;
+            height: 1.5rem;
+            margin-right: .5rem;
+            display: inline-block;
+            -webkit-clip-path: polygon(0 0, 100% 50%, 0% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 50%, 0% 100%, 0% 100%);
+            opacity: 0;
+            -webkit-transition: all .2s;
+            transition: all .2s;
+        }
+
+        &:hover::before {
+            opacity: 1;
+        }
+    }
+
+    &:hover {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@media only screen and (max-width: 991px),
+       only screen and (hover: none) {
+    
+    .navigation {
+
+        &__item {
+            display: none;
+        }
+
+        &__phone-num {
+            display: none;
+        }
+
+        &__button-box {
+            display: block;
+        }
+    }
+}
+
+@media only screen and (max-width: 650px),
+       only screen and (hover: none) {
+    
+    .navigation {
+        padding: 2rem 3rem;
+        
+    }
+}
+
+@media only screen and (max-width: 500px),
+       only screen and (hover: none) {
+    
+    .navigation {
+        
+        &__logo {
+            width: 20rem;
+        }
+    }
+}

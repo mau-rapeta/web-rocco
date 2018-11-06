@@ -1,0 +1,124 @@
+.carousel {
+    &-indicators {
+        li {
+            text-indent:0;
+            width: 4rem;
+            height: 4rem;
+            color: $color-black;
+            border-bottom: 1px solid $color-black;
+            background-color: transparent;
+            text-align: center;
+            line-height: 3;
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin: 0 1.5rem;
+            opacity: .5;
+
+            &.active {
+                background-color: transparent;
+                opacity: 1;
+            }
+        }
+    }
+
+    &-item {
+        height: 100vh;
+        min-height: 56rem;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        &--1 {
+            background-image: url(../img/slide-home-01.jpg);
+        }
+
+        &--2 {
+            background-image: url(../img/slide-home-02.jpg);
+        }
+
+        &--3 {
+            background-image: url(../img/slide-home-03.jpg);
+        }
+
+        &--4 {
+            background-image: url(../img/slide-home-04.jpg);
+        }
+    }
+
+    &__heading {
+        @include absCenter;
+        font-size: 4.5rem;
+        text-align: center;
+        font-weight: 300;
+        line-height: 1.5;
+        color: $color-secondary;
+        width: 58rem;
+        z-index: 1;
+
+        span {
+            display: block;
+            font-weight: 400;
+            color: $color-primary;
+            line-height: inherit;
+        }
+    }
+
+    &__pleca {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url(../img/pleca-slider-01.svg);
+        background-position: bottom center;
+        background-size: 90%;
+        background-repeat: no-repeat;
+        z-index: 0;
+    }
+
+    &__prev:link,
+    &__next:link,
+    &__prev:visited,
+    &__next:visited
+     {
+        position: absolute;
+        color: $color-black;
+        top: 94.5%;
+        z-index: 300;
+        font-size: 2rem;
+    }
+
+    &__prev {
+        left: 35%;
+    }
+
+    &__next {
+        right: 35%;
+    }
+
+}
+
+@media only screen and (max-width: 991px),
+       only screen and (hover: none) {
+
+    .carousel {
+        &-indicators {
+            bottom: 10rem;
+        }
+
+        &__heading {
+            width: initial;
+        }
+    }
+}
+
+@media only screen and (max-width: 575px),
+       only screen and (hover: none) {
+
+    .carousel {
+
+        &__heading {
+            font-size: 4rem;
+        }
+    }
+}

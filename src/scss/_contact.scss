@@ -1,0 +1,164 @@
+.contact {
+    padding: 10rem 0 15rem 0;
+    background-image: url(../img/background-contacto.jpg);
+    background-position: center;
+    background-size: cover;
+
+    &__box {
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    &__heading {
+        font-size: 4rem;
+        text-align: center;
+        font-weight: 200;
+        color: $color-secondary;
+        line-height: 1.5;
+        margin-bottom: 10rem;
+
+        span {
+            display: block;
+            font-weight: 300;
+            color: $color-primary;;
+        }
+    }
+
+}
+
+.form {
+    font-size: $body-font-size;
+
+    &__group {
+        margin-bottom: 3rem;
+
+        &--2 {
+            display: inline-block;
+            width: 46%;
+            
+        }
+    }
+
+    &__label {
+        display: block;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    &__input {
+        display: block;
+        width: 100%;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid $color-black;
+        font-family: inherit;
+    }
+
+    &__submit {
+        border: none;
+        text-transform: uppercase;
+        background-color: transparent;
+        float: right;
+        color: $color-primary;
+        cursor: pointer;
+
+        &:hover {
+            color: $color-black;
+            border-bottom: 1px solid $color-black;
+        }
+    }
+
+    &__textarea2 {
+        height: 10rem;
+    }
+
+}
+
+.contact-page {
+    padding-top: 4rem;
+    padding-bottom: 10rem; 
+    background-image: url(../img/background-diseno.jpg);
+
+    &__map-box{
+        width: 100%;
+        overflow: hidden;
+
+        .container-fluid {
+            padding: 0;
+        }
+
+        [class^="col-"] {
+            padding: 0;
+        }
+    }
+
+    &__map {
+        width: inherit;
+        height: auto;
+    }
+
+    &__footer {
+        padding: 4rem 0 !important;
+    }
+
+    &__box {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 1182px) {
+    .contact-page {
+
+        &__box {
+            width: 75%;
+        }
+    }
+}
+
+@media only screen and (max-width: 991px),
+       only screen and (hover: none) {
+
+    .contact {
+
+        &__box {
+            width: 80%;
+        }
+    }
+
+    .form {
+
+        &__group {
+
+            &--2 {
+                display: block;
+                width: initial;
+                margin-right: 0;
+            }
+        }
+    }
+
+    .contact-page {
+
+        &__box {
+            width: 85%;
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .contact {
+
+        &__heading {
+            font-size: 3.5rem;
+        }
+    }
+
+    .form {
+        font-size: $body-font-size-sm;
+    }
+}

@@ -1,0 +1,88 @@
+.home {
+    background-image: url(../img/background-home.svg);
+    background-size: 100%;
+    padding: 4rem 0 15rem 0;
+    color: $color-white;
+    font-size: $body-font-size;
+    position: relative;
+    z-index: 1;
+    
+    &__scroll-box {
+        text-align: center;
+        margin-bottom: 15rem;
+    }
+
+    &__scroll {
+        width: 4rem;
+    }
+
+    &__div1 {
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 5rem;
+        text-align: justify;
+    }
+
+    &__img-box {
+        width: 40rem;
+        margin: 0 auto;
+        text-align: center;
+        z-index: 1;
+    }
+
+    &__img1 {
+        width: inherit;
+    }
+
+    &__div2 {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 10rem;
+        text-align: justify;
+        z-index: 1;
+    }
+
+    &__img2 {
+        width: 20rem;
+    }
+
+    &__row {
+        margin-bottom: 20rem;
+    }
+}
+
+@media only screen and (max-width: 991px),
+       only screen and (hover: none) {
+    
+    .home {
+        background: $color-black !important;
+
+       &__div1 {
+           width: 90%;
+       }
+
+       &__scroll-box {
+            margin-bottom: 5rem;
+       }
+
+       &__heading {
+            margin-top: 10rem;
+            margin-bottom: 10rem;
+       }
+
+       &__img-box {
+           width: 95%;
+           margin-top: 2rem;
+       }
+
+       &__row {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .home {
+        font-size: $body-font-size-sm;
+    }
+}

@@ -1,0 +1,96 @@
+.nosotros {
+    font-size: $body-font-size;
+
+    &__header {
+        height: 100vh;
+        min-height: 56rem;
+        background-image: url(../img/slide-home-03.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+
+    &__empresa {
+        position: relative;
+        background-color: $color-tertiary;
+        padding-top: 3rem;
+        padding-bottom: 15rem;
+    }
+
+    &__div1 {
+        width: 60%;
+    }
+
+    &__row {
+        margin-top: 8rem;
+    }
+
+    &__img-box {
+        width: 40rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__img1 {
+        width: inherit;
+    }
+
+    &__div2 {
+        width: 90%;
+        margin: 0 auto;
+        text-align: justify;
+    }
+
+    &__procesos {
+        padding: 15rem 0;
+        background-image: url(../img/slide-home-01.jpg);
+        background-size: cover;
+    }
+
+    &__video-box {
+        width: 80%;
+        margin: 0 auto;
+        height: 35rem;
+        background-color: $color-tertiary;
+    }
+
+    &__proyectos {
+        padding-top: 10rem;
+        padding-bottom: 20rem;
+        background-color: $color-tertiary;
+        position: relative;
+    }
+
+    &__div3 {
+        width: 50%;
+        margin: 0 auto;
+        position: relative;
+        z-index: 3;
+    }
+
+    &__paragraph {
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .nosotros {
+        
+        &__div1,
+        &__div2,
+        &__div3 {
+            width: 90%;
+        }
+
+        &__img-box {
+            width: 95%;
+            margin-top: 2rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .nosotros {
+        font-size: $body-font-size-sm;
+    }
+}

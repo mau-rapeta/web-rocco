@@ -1,0 +1,263 @@
+.onlyDesktop {
+    display: block;
+}
+
+.onlyMobile {
+    display: none;
+}
+
+@media only screen and (max-width: 991px),
+       only screen and (hover: none) {
+
+    .onlyDesktop {
+        display: none !important;
+    }
+
+    .onlyMobile {
+        display: block !important;
+    }
+}
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.span-1 {
+    color: $color-primary;
+}
+
+.span-black {
+    color: $color-black;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.margin-r-medium {
+    margin-right: 5rem;
+} 
+
+.mt-big {
+    margin-top: 14rem !important;
+}
+
+.main-heading {
+    @include absCenter;
+    font-size: 4.5rem;
+    text-align: center;
+    font-weight: 300;
+    color: $color-secondary;
+    line-height: 1.8;
+    white-space: nowrap;
+    z-index: 1;
+
+    &--black {
+        color: $color-black;
+    }
+}
+
+.secondary-heading {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 200;
+    color: $color-secondary;
+    line-height: 1.5;
+    margin-bottom: 10rem;
+    position: relative;
+    z-index: 1;
+
+    span {
+        display: block;
+        font-weight: 300;
+        color: $color-primary;
+    }
+}
+
+.tertiary-heading {
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: 200;
+    color: $color-primary;
+
+    span {
+        font-weight: 300;
+    }
+}
+
+.pleca {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/pleca-slider-01.svg);
+    background-position: bottom center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    z-index: 0;
+
+    &--nosotros {
+        background-image: url(../img/pleca-nosotros.png);
+        opacity: .5;
+    }
+
+    &--home {
+        background-image: url(../img/pleca-home.png);
+        opacity: .5;
+        z-index: -1;
+    }
+}
+
+.arrow-heading {
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 7rem;
+    margin-bottom: 15rem;
+    text-align: center;
+    width: 30rem;
+    display: block;
+
+    &::before, 
+    &::after {
+        display: block;
+        position: absolute;
+        width: 7rem;
+        margin: 0 auto;
+        left: 38%;
+    }
+
+    &--pink {
+        color: $color-primary;
+        font-weight: 600;
+
+        &::before {
+            content: url(../img/titulo-01.svg);
+            top: -130%;
+        }
+
+        &::after {
+            content: url(../img/titulo-02.svg);
+            top: 115%;
+        }
+    }
+
+    &--black {
+        color: $color-black;
+
+        &::before {
+            content: url(../img/titulo-01-black.svg);
+            top: -70%;
+        }
+
+        &::after {
+            content: url(../img/titulo-02-black.svg);
+            top: 110%;
+        }
+    }
+
+    &--proyectos {
+        color: $color-primary;
+        font-weight: 600;
+        width: 22rem;
+        font-size: 2rem;
+        margin: 4.5rem auto;
+
+        &::before {
+            content: url(../img/titulo-01.svg);
+            top: -85%;
+            left: 34%;
+        }
+
+        &::after {
+            content: url(../img/titulo-02.svg);
+            top: 108%;
+            left: 34%;
+        }
+        
+        &--one-line {
+
+            &::before {
+                top: -165%;
+            }
+        }
+    }
+}
+
+.social {
+    position: absolute;
+    right: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid $color-primary;
+    padding-top: 5px;
+    z-index: 500;
+
+    a {
+        &:hover {
+            opacity: .8;
+        }
+    }
+
+    &__img {
+        height: 2.5rem;
+        margin: 1rem 5px;
+    }
+
+    &--1 {
+        top: 12rem;
+    }
+
+    &--2 {
+        bottom: -8rem;
+    }
+
+    &--3{
+        top: 46%;
+    }
+
+    &--4 {
+        top: 72%;
+    }
+
+    &--5 {
+        top: 60%;
+    }
+
+    @media only screen and (max-width: 991px),
+       only screen and (hover: none) {
+    
+        opacity: 0;
+        visibility: hidden;
+    
+    } 
+}
+
+@media only screen and (max-width: 991px),
+       only screen and (hover: none) {
+
+    .pleca {
+        background-size: 150%;
+    }
+
+    .main-heading {
+        line-height: 1.5;
+        white-space: normal;
+        width: 40rem;
+        
+    }
+}
+
+@media only screen and (max-width: 575px),
+       only screen and (hover: none) {
+
+    .main-heading {
+        font-size: 4rem;
+        width: 30rem;
+    }
+}

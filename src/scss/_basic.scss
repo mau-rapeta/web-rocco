@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;   // 1rem
+}
+
+body {
+    box-sizing: border-box;
+    font-family: $main-font;
+    font-weight: 200;
+    font-size: $body-font-size;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
